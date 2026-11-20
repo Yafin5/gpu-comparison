@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Нормалізація стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Локальний шрифт */
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Основні стилі */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f1f3f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Контентний контейнер */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+/* Заголовок */
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #202b45;
+}
+
+.page-header p {
+    color: #666;
+}
+
+/* Секція таблиці */
+.table-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+/* Таблиця */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    color: #202b45;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Заголовки стовпців */
+thead {
+    background-color: #263b63;
+    color: #fff;
+}
+
+/* Чергування кольорів */
+tbody tr:nth-child(even) {
+    background-color: #f0f3f8;
+}
+
+tbody tr:hover {
+    background-color: #e1e9f7;
+}
+
+/* Підвал */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Адаптація для телефонів */
+@media (max-width: 600px) {
+    .container {
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
